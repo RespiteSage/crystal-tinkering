@@ -1,0 +1,10 @@
+name: math
+version: 0.1.0
+crystal: 1.0.0
+
+authors:
+  - Benjamin Wade <benjamin@va.wagner.com>
+
+targets:
+  fibo_seq:
+    main: src/fibo_seq.cr

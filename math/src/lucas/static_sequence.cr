@@ -1,10 +1,10 @@
 module Lucas
   # TODO
-  abstract class Sequence(P, Q)
+  abstract class StaticSequence(P, Q)
     include Iterator(Int32)
 
     # TODO
-    class FirstKind(P, Q) < Sequence(P, Q)
+    class FirstKind(P, Q) < StaticSequence(P, Q)
       private property current_value : Int32 = 0
       private property next_value : Int32 = 1
 
@@ -19,7 +19,7 @@ module Lucas
     end
 
     # TODO
-    class SecondKind(P, Q) < Sequence(P, Q)
+    class SecondKind(P, Q) < StaticSequence(P, Q)
       private property current_value : Int32 = 2
       private property next_value : Int32 = P
 

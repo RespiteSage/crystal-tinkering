@@ -1,7 +1,7 @@
-require "./lucas/sequence"
+require "./lucas/static_sequence"
 
 module Fibo
-  class SequenceGenerator < Lucas::Sequence::FirstKind(1, -1)
+  class SequenceGenerator < Lucas::StaticSequence::FirstKind(1, -1)
   end
 
   class RatioGenerator

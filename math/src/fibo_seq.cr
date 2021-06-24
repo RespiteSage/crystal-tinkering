@@ -2,27 +2,14 @@ module Fibo
   class SequenceGenerator
     include Iterator(Int32)
 
-    private property index = 0
-    private property prev_prev : Int32 = 0
-    private property prev : Int32 = 1
+    private property current_value : Int32 = 0
+    private property next_value : Int32 = 1
 
     def next : Int32
-      if index == 0
-        self.index += 1
-        return prev_prev
-      end
+      value = current_value
 
-      if index == 1
-        self.index += 1
-        return prev
-      end
-
-      self.index += 1
-
-      value = prev_prev + prev
-
-      self.prev_prev = prev
-      self.prev = value
+      self.current_value = next_value
+      self.next_value = value + current_value
 
       value
     end

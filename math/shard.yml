@@ -16,3 +16,5 @@ targets:
     main: src/root_five.cr
   babylonian_root:
     main: src/babylonian_root.cr
+  bahkshali_root:
+    main: src/bahkshali_root.cr

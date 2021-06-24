@@ -8,5 +8,5 @@ authors:
 targets:
   fibo_seq:
     main: src/fibo_seq.cr
-  lucas_seq:
-    main: src/lucas_seq.cr
+  lucas_numbers:
+    main: src/lucas_numbers.cr

@@ -10,3 +10,7 @@ targets:
     main: src/fibo_seq.cr
   lucas_numbers:
     main: src/lucas_numbers.cr
+  root_two:
+    main: src/root_two.cr
+  root_five:
+    main: src/root_five.cr

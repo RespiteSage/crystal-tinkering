@@ -14,3 +14,5 @@ targets:
     main: src/root_two.cr
   root_five:
     main: src/root_five.cr
+  babylonian_root:
+    main: src/babylonian_root.cr

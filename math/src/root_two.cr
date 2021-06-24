@@ -1,9 +1,9 @@
-require "./lucas/sequence"
+require "./lucas/static_sequence"
 
 class PellRatios
   include Iterator(Float64)
 
-  private getter sequence = Lucas::Sequence::FirstKind(2, -1).new
+  private getter sequence = Lucas::StaticSequence::FirstKind(2, -1).new
   private property prev = 0
 
   def next : Float64

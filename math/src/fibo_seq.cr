@@ -1,18 +1,7 @@
+require "./lucas/sequence"
+
 module Fibo
-  class SequenceGenerator
-    include Iterator(Int32)
-
-    private property current_value : Int32 = 0
-    private property next_value : Int32 = 1
-
-    def next : Int32
-      value = current_value
-
-      self.current_value = next_value
-      self.next_value = value + current_value
-
-      value
-    end
+  class SequenceGenerator < Lucas::Sequence::FirstKind(1, -1)
   end
 
   class RatioGenerator

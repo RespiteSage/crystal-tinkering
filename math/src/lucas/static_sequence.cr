@@ -1,3 +1,5 @@
+require "../ratioable"
+
 module Lucas
   # TODO
   abstract class StaticSequence(P, Q)
@@ -5,6 +7,8 @@ module Lucas
 
     # TODO
     class FirstKind(P, Q) < StaticSequence(P, Q)
+      include Ratioable
+
       private property current_value : Int32 = 0
       private property next_value : Int32 = 1
 
@@ -20,6 +24,8 @@ module Lucas
 
     # TODO
     class SecondKind(P, Q) < StaticSequence(P, Q)
+      include Ratioable
+
       private property current_value : Int32 = 2
       private property next_value : Int32 = P
 

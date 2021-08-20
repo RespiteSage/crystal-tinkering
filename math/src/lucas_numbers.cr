@@ -19,7 +19,7 @@ end
 element_count = ARGV[0].to_i
 
 seq_gen = Lucas::Numbers.iterator
-ratios = Lucas::Numbers::RatioIterator.new
+ratios = Lucas::Numbers::Sequence.ratios
 
 puts seq_gen.first(element_count).join(",")
 puts ratios.first(element_count).join(",")

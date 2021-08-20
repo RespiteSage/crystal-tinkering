@@ -18,7 +18,7 @@ end
 
 approximation_steps = ARGV[0].to_i
 
-ratios = Lucas::Numbers::RatioIterator.new
+ratios = Lucas::Numbers::Sequence.ratios
 
 (approximation_steps - 1).times { ratios.next }
 

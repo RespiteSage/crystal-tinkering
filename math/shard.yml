@@ -18,3 +18,7 @@ targets:
     main: src/babylonian_root.cr
   bahkshali_root:
     main: src/bahkshali_root.cr
+  lucas_root:
+    main: src/lucas_root.cr
+  phi_convergence:
+    main: src/phi_convergence.cr

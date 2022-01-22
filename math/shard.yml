@@ -22,3 +22,5 @@ targets:
     main: src/lucas_root.cr
   phi_convergence:
     main: src/phi_convergence.cr
+  newtons_method_root:
+    main: src/newtons_method_root.cr
